@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/lib/css/element-ui.css" />
+
+    <title>员工列表</title>
+</head>
+
+<body>
+<div id="app">
+    <div class="title">员工列表数据展示</div>
+    <div class="table">
+        <h2>{{message}}</h2>
+        <el-table :data="dataSet">
+            <el-table-column label="姓名" prop="name"></el-table-column>
+            <el-table-column label="年龄" prop="age"></el-table-column>
+            <el-table-column label="城市" prop="addr.city"></el-table-column>
+            <el-table-column label="地址" prop="addr.name"></el-table-column>
+        </el-table>
+    </div>
+    <div class="box-wrapper">
+        <div class="box line3">
+            获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据获取数据
+        </div>
+        <div class="box operate">
+            <a>编辑</a>
+            <a>编辑</a>
+            <a>编辑</a>
+            <a>编辑</a>
+            <a>编辑</a>
+            <a>编辑</a>
+            <a>编辑</a>
+        </div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box grid-wrapper">
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+        </div>
+    </div>
+    <div class="bottom">
+        <el-button @click="onloadData">获取数据</el-button>
+    </div>
+</div>
+<link rel="stylesheet" href="dist/css/my-style.css" />
+<script src="lib/js/vue.js"></script>
+<script src="lib/js/element-ui.js"></script>
+<script src="lib/js/axios.min.js"></script>
+<script src="dist/js/users.js"></script>
+</body>
+
+</html>
